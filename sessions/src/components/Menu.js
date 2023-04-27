@@ -4,9 +4,6 @@ import FullScreenToggle from "./FullScreenToggle";
 
 const Menu = () => {
 
-
-  const my_page = document;
-
   return (
     <>
       <div className="modal fade" id="menuModal" tabIndex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">

@@ -1,8 +1,7 @@
-
 import { NavLink } from "react-router-dom";
 import Tutorial from "./Tutorial";
 import FullScreenToggle from "./FullScreenToggle";
-import { useState } from "react";
+
 
 export default function Navigation() {
 

@@ -17,7 +17,6 @@ export default function Timer({studyMin, breakMin, cycles, defineSessionTimes}) 
     const [totalSeconds, setTotalSeconds] = useState(0)
     const [sessionProgress, setSessionProgress] = useState(0)
     const audio = useRef(null)
-    console.log(absoluteTotal)
 
     const handleCounter = () => {
         if (cycle > 0) {
@@ -66,12 +65,12 @@ export default function Timer({studyMin, breakMin, cycles, defineSessionTimes}) 
                     {focusMode ? <Study study={studyTime} totalSeconds={totalSeconds}/>: <Break break={breakTime} totalSeconds={totalSeconds}/>}
                 </div>
 
-                <div class="container progress-container">
-                        <div class="row justify-content-center">
-                            <div class="col-xl-4 col-lg-4 col-md-5 col-sm-6">
+                <div className="container progress-container">
+                        <div className="row justify-content-center">
+                            <div className="col-xl-4 col-lg-4 col-md-5 col-sm-6">
                                 <div className="d-block">
                                     <div className="progress color-graded">
-                                                <div class={ focusMode ? "progress-bar" : "progress-bar-break"} role="progressbar" style={{width: `${sessionProgress}%`}} aria-valuemax="100"></div>
+                                                <div className={ focusMode ? "progress-bar" : "progress-bar-break"} role="progressbar" style={{width: `${sessionProgress}%`}} aria-valuemax="100"></div>
                                     </div>
                                 </div>
                             </div>

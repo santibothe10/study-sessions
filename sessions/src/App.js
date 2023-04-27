@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import React, {useState } from 'react';
 import Navigation from './components/Navigation';
 import Clock from './components/Clock';
@@ -23,7 +23,7 @@ function App() {
       <HashRouter>
 
         <div className="App" id="App">
-        <video autoPlay muted className="video" width="1" height="1" controls id="myVideo" loop="true">
+        <video autoPlay muted className="video" width="1" height="1" controls id="myVideo" loop={true}>
             <source src={Blank} type="video/mp4" />
         </video>
          <Routes>

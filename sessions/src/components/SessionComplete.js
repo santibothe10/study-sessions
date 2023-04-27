@@ -1,4 +1,3 @@
-import Navigation from "./Navigation";
 import { NavLink } from "react-router-dom";
 import Tutorial from "./Tutorial";
 import FullScreenToggle from "./FullScreenToggle";

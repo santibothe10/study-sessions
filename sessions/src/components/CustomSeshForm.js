@@ -45,28 +45,28 @@ export default function CustomSeshForm({defineSessionTimes}) {
 
           <div className="row justify-content-center">
             <div className="col-xl-3 col-lg-4 col-md-7 col-sm-10">
-              <label className="color-graded" for="studytimeinmin">Study Time</label>
+              <label className="color-graded" htmlFor="studytimeinmin">Study Time</label>
               <input maxLength="4" value={study} onChange={handleStudyChange} id="studytimeinmin" type="number" className="form-control bg-dark" placeholder="Min"/>
             </div>
           </div>
 
           <div className="row justify-content-center">
             <div className="col-xl-3 col-lg-4 col-md-7 col-sm-10">
-              <label className="color-graded" for="breaktimeinmin">Break Time</label>
+              <label className="color-graded" htmlFor="breaktimeinmin">Break Time</label>
               <input value={breakTime} onChange={handleBreakChange} id="breaktimeinmin" type="number" className="form-control bg-dark" placeholder="Min"/>
             </div>
           </div>
 
           <div className="row justify-content-center">
             <div className="col-xl-3 col-lg-4 col-md-7 col-sm-10">
-              <label className="color-graded" for="cyclecount">Cycles</label>
+              <label className="color-graded" htmlFor="cyclecount">Cycles</label>
               <input value={cycle} onChange={handleCycleChange} id="cyclecount" type="number" className="form-control bg-dark" placeholder="#"/>
             </div>
           </div>
 
             <div className="row justify-content-center">
               <div className="col-xl-3 col-lg-4 col-md-7 col-sm-10">
-                <button type="submit" class="w-100 btn navigation-button mb-2 mt-3">Start a session</button>
+                <button type="submit" className="w-100 btn navigation-button mb-2 mt-3">Start a session</button>
               </div>
             </div>
 

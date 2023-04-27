@@ -5,7 +5,7 @@ const Tutorial = () => {
     <>
       <button className="w-100 btn navigation-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Tutorial</button>
 
-      <div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div className="offcanvas-header">
           <h3 id="offcanvasRightLabel">Sessions Tutorial</h3>
           <button className="btn navigation-button" data-bs-dismiss="offcanvas">X</button>

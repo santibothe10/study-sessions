@@ -1,5 +1,3 @@
-
-
 const Picture = ({focusMode}) => {
 
   const studyClass = "App-logo study-pic"

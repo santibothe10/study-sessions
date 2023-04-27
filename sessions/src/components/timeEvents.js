@@ -1,4 +1,3 @@
-
 const TimeLeft = ({counter, classes}) => {
     const seconds = counter % 60;
     const minutes = Math.floor(counter / 60)
