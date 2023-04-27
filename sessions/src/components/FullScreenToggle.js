@@ -7,8 +7,10 @@ const FullScreenToggle = () => {
 
       if (!document.fullscreenElement) {
           my_page.requestFullscreen()
+          my_page.webkitRequestFullScreen();
       } else {
           document.exitFullscreen()
+          document.webkitCancelFullScreen();
       }
   }
   return (
