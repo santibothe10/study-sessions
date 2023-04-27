@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  /* background-color: #282c34; */
+  background-color: #212124;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-logo {
+  height: 50vmin;
+  pointer-events: none;
+  border-radius: 2vmin;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 60s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.time-frame {
+  margin: 0;
+  color:  rgba(234, 228, 213, 0.286);
+  font-family: "Wallpoet";
+}
+
+.time-box {
+  /* border: 1px solid rgba(213, 198, 162, 0.173); */
+  font-size: 10vmin;
+  width: 40vmin;
+  display: block;
+  margin: 1vmin;
+  text-align: left;
+  padding-left: 2vmin;
+}
+
+.clock {
+  font-size: 25vmin;
+  width: 90vmin;
+  text-align: center;
+  padding-left: 0;
+}
+
+.break {
+  font-size: 7vmin;
+  width: 50vmin;
+  text-align: center;
+}
+
+.navigation-button {
+  border-color: rgba(234, 228, 213, 0.5);
+  color: rgba(234, 228, 213, 0.5);
+  background-color: rgba(0,0,0,0);
+}
+
+.navigation-button:hover {
+  border: 1px solid rgba(234, 228, 213, 0.5);
+  color: rgba(234, 228, 213, 0.7);
+  background-color: rgba(234, 228, 213, 0.1);
+}
+
+.form-control {
+  background-color: #212124;
+  border-color: rgba(234, 228, 213, 0.286);
+  color: rgba(234, 228, 213, 0.5);
+  font-size: medium;
+}
+.color-graded {
+  background-color: #212124;
+  border-color: rgba(234, 228, 213, 0.286);
+  color: rgba(234, 228, 213, 0.5);
+  font-size: medium;
+}
+input[type=number]:focus {
+  color: rgba(234, 228, 213, 0.8);
+  background-color: #212124;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.focus {
+  margin: 0
+}
+
+.t-box-break {
+  color: rgba(142, 202, 208, 0.5);
+}
+
+.t-box-study, h5 {
+  color: rgba(234, 228, 213, 0.5);
+}
+.offcanvas {
+  background-color: #212124;
+}
+.offcanvas-header {
+  border-bottom: 1px solid rgba(234, 228, 213, 0.70);
+}
+
+#offcanvasRightLabel {
+  margin-bottom: -1rem;
+}
+
+.offcanvas p, .offcanvas h3 {
+  color: rgba(234, 228, 213, 0.70);
+}
+p {
+  font-size: medium;
+}
+.break-pic {
+  filter: drop-shadow(0px 0px 0px rgb(106, 160, 165));
+}
+.study-pic {
+  filter: drop-shadow(0px 0px 0px rgb(191, 183, 165));
+}
+.modal-content {
+  background-color: #212124;
+
+}
+.modal-header,
+.modal-footer {
+  /* border-color: rgba(234, 228, 213, 0.286); */
+  border: 0;
+}
+
+.progress-bar {
+  background-color: rgba(234, 228, 213, 0.286);
+}
+.progress-bar-break {
+  background-color: rgba(106, 160, 165, 0.286);
+}
+.progress-bar-hidden {
+  background-color: #212124;;
+}
+.progress {
+  height: .5rem;
+  border-bottom: 1px solid rgba(234, 228, 213, 0.286);
+}
+.app-title {
+  background-color: #212124;
+  border-color: rgba(234, 228, 213, 0.286);
+  color: rgba(234, 228, 213, 0.5);
+  font-size: 3rem;
+}
