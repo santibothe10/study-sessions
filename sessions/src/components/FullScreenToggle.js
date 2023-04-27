@@ -6,11 +6,21 @@ const FullScreenToggle = () => {
   const handleClick = () => {
 
       if (!document.fullscreenElement) {
-          my_page.requestFullscreen()
-          my_page.webkitRequestFullScreen();
+          if (my_page.requestFullscreen) {
+            my_page.requestFullscreen();
+          } else if (my_page.webkitRequestFullscreen) {
+            my_page.webkitRequestFullscreen();
+          } else if (my_page.msRequestFullscreen) {
+            my_page.msRequestFullscreen();
+          }
       } else {
-          document.exitFullscreen()
-          document.webkitCancelFullScreen();
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
       }
   }
   return (
